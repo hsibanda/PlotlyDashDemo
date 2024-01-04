@@ -1,0 +1,318 @@
+body {
+	background-color: #1e2130;
+	color: #f3f5f4;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+#big-app-container {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 6rem;
+}
+
+.banner {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #a3adb9;
+	padding: 1rem 10rem;
+	width:100%;
+	height: fit-content;
+}
+
+.banner h5 {
+	font-family: 'Open Sans Semi Bold', sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+}
+
+.banner h6 {
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
+#banner-text {
+	text-align: center;
+}
+
+.banner button {
+	color: #95969A;
+	margin-right: 10px;
+	height: 3rem;
+	line-height: 3rem;
+}
+
+#banner-logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+
+}
+
+.banner Img {
+	height: 3rem;
+	margin: 0px 10px;
+}
+
+#tabs {
+	width: 100%;
+}
+
+.custom-tabs {
+	background-color: #1E2130;
+	font-weight: 600;
+	font-size: 14px;
+	height:fit-content;
+}
+#Stats-tab.custom-tab, #Control-chart-tab.custom-tab {
+	background-color: #161a28;
+	letter-spacing: 1px;
+	color: inherit;
+	border: 0;
+	border-bottom: #1E2130 solid 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 18px;
+
+}
+
+#Stats-tab.custom-tab--selected, #Control-chart-tab.custom-tab--selected {
+	border-bottom: #91dfd2 solid 4px;
+  }
+
+#Stats-tab.custom-tab {
+	margin-right: 3px;
+}
+
+#Control-chart-tab.custom-tab {
+	margin-left: 3px;
+  }
+
+#app-container {
+	background: #161a28;
+	margin: 1rem 2rem;
+	max-width: 100%;
+	width: 100%;
+	height: calc(100vh - 10rem - 1px);
+}
+
+/* Tab1 content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#set-stats-intro-container {
+	font-weight: bold;
+	margin: 4rem 5rem 8rem;
+	font-size: 1.4rem;
+  }
+  
+  
+  #metric-select-title {
+	color: darkgray;
+  }
+  
+  #button-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+  }
+  
+  #value-setter-view-btn {
+	margin-left: 20px;
+  }
+  
+  #value-setter-panel {
+	line-height: 2;
+  }
+  
+  #value-setter-panel-header {
+	font-weight: bold;
+	color: darkgray;
+	line-height: 1;
+	padding: 2rem 0;
+	border-bottom: 1px solid #4b5460;
+  }
+  
+  #value-setter-panel-header > div {
+	text-align: right;
+  }
+  
+  #value-setter-view-btn, #value-setter-set-btn {
+	border: 1px solid #4B5460;
+	color: darkgray;
+  }
+  
+  #value-setter-set-btn:hover, #value-setter-view-btn:hover {
+	color: #91dfd2;
+	border-color: white;
+  }
+  
+  #value-setter-panel-usl, #value-setter-panel-lsl, #value-setter-panel-ucl, #value-setter-panel-lcl {
+	padding: 1rem 0;
+  }
+
+/* Dropdown
+----------------------------------------------*/
+
+/*Dropdown items*/
+.Select-control, .Select-multi-value-wrapper, .Select-menu-outer div {
+	background-color: #242633;
+  }
+  
+  /*Dropdown items*/
+.Select-control, .Select, .Select-value-label, .Select-clear-zone {
+color: white;
+}
+
+
+/*Dropdown items*/
+.Select-menu-outer {
+background-color: #242633;
+border: 1px solid darkgray !important;
+}
+
+/*Dropdown items*/
+.Select-menu-outer div:hover {
+background-color: rgba(36, 38, 51, 0.5) !important;
+cursor: pointer;
+}
+
+/*Dropdown arrow + delete button*/
+.Select-control, .Select-control > span {
+color: white;
+background: #242633 !important;
+}
+
+/*Placeholder*/
+.Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+color: white !important;
+}
+
+/*Placeholder*/
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+/*border: 1px solid darkgray;*/
+border-radius: 4px;
+background-color: #242633;
+cursor: pointer;
+}
+
+
+.Select.is-focused:not(.is-open) > .Select-control {
+border-color: #91dfd2 !important;
+}
+
+#value-setter-menu {
+flex: 1 1 30%;
+margin-left: 5rem;
+display: flex;
+flex-direction: column;
+}
+
+#value-setter-panel {
+line-height: 2;
+}
+
+#metric-rows .column, #metric-rows .columns {
+width: 100% !important;
+float: none;
+margin: 0.25rem 0 !important;
+padding-left: 50%;
+position: relative;
+}
+
+#metric-rows .column:before, #metric-rows .columns:before {
+/* Now like a table header */
+position: absolute;
+/* Top/left values mimic padding */
+left: 6px;
+width: 45%;
+padding-right: 10px;
+white-space: nowrap;
+}
+
+#main-body-container {
+display: grid;
+grid-template-columns: 60% 40%;
+/* background-color: red; */
+
+}
+
+#main-chart-container {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	/* background-color: red; */
+	
+	}
+
+  
+#table1 {
+display:grid;
+grid-template-columns: 25% 20% 55%;
+margin-left: 1rem;
+height: 300px;
+overflow: scroll;
+}
+
+.daq-graduatedbar--light__progressBlock{
+	width: 1px;
+}
+
+.daq-graduatedbar {
+	color: black;
+	font-weight: bold;
+}
+
+.table-header {
+    border-bottom: 0.5px solid #f4efef0f;
+    padding-bottom: 10px;
+	position:sticky;
+	z-index: 1000;
+	top: 0;
+	background-color: #161a28;
+}
+
+#table2 {
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-left: 1rem;
+	height: 300px;
+	overflow: scroll;
+	}
+
+.data-dropdown {
+	margin: 40px 20px;
+	width: 40%;
+}
+
+#dropdowns {
+	display: flex;
+	flex-direction: column;
+	margin-left: 40px;
+	width: 40%;
+}
+
+.dropdown {
+	margin-bottom: 40px;
+}
+
+.submit-button {
+	margin-top: 40px;
+	width: 40%;
+	align-self: flex-end;
+	color: white;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+#chart-container {
+	margin: 40px;
+}
