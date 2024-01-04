@@ -210,5 +210,5 @@ def update_graph(clicks, well_type, well_name):
 		)
 	return fig
 
-if __name__ == '__main__':
-	app.run_server(debug=True)
+# if __name__ == '__main__':
+# 	app.run_server(debug=True)

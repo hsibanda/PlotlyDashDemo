@@ -1,0 +1,14 @@
+[Unit]
+Description=My Dash Application
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/PlotlyDashDemo
+ExecStart=/usr/local/bin/gunicorn dash1:server -b :8000
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
